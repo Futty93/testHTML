@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Display</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Selected Image</h1>
+    <input type="file" id="imageInput" accept="image/*" onchange="displayImage(event)">
+    <div class="image-container">
+        <img id="selectedImage" src="#" alt="Selected Image">
+        <div id="circle"></div>
+        <svg id="lines"></svg>
+    </div>
+    <div class="selected-point">
+        <h2>Selected Point</h2>
+        <p id="pointCoordinates">X: - Y: -</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
