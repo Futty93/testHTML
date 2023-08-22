@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Webcam App</title>
-</head>
-<body>
+  </head>
+  <body>
     <select id="webcamSelect"></select>
+    <select id="resolutionSelect">
+      <option value="">Select resolution</option>
+    </select>
     <button id="startButton">Start Webcam</button>
     <button id="captureButton">Capture</button>
     <div class="video-container">
-        <video id="webcamVideo" class="canvas" autoplay playsinline></video>
-        <img id="capturedImage" class="canvas" alt="Captured Image">
+      <video id="webcamVideo" class="canvas" autoplay playsinline></video>
+      <img id="capturedImage" class="canvas" alt="Captured Image" />
     </div>
     <div id="webcamInfo"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
