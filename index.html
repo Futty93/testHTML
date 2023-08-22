@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>Image Display</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Webcam App</title>
 </head>
 <body>
-    <h1>Selected Image</h1>
-    <input type="file" id="imageInput" accept="image/*" onchange="displayImage(event)">
-    <div class="image-container">
-        <img id="selectedImage" src="#" alt="Selected Image">
-        <div id="circle"></div>
-        <svg id="lines"></svg>
+    <select id="webcamSelect"></select>
+    <button id="startButton">Start Webcam</button>
+    <button id="captureButton">Capture</button>
+    <div class="video-container">
+        <video id="webcamVideo" class="canvas" autoplay playsinline></video>
+        <img id="capturedImage" class="canvas" alt="Captured Image">
     </div>
-    <div class="selected-point">
-        <h2>Selected Point</h2>
-        <p id="pointCoordinates">X: - Y: -</p>
-    </div>
+    <div id="webcamInfo"></div>
     <script src="script.js"></script>
 </body>
 </html>
-

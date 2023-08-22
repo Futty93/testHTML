@@ -1,28 +1,48 @@
-.image-container {
-    width: 300px;
-    height: 300px;
-    border: 2px solid #ccc;
+/* You can add your CSS styles here */
+body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    height: 100vh;
+    margin: 0;
 }
 
-#selectedImage {
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+video {
+    margin-top: 20px;
     max-width: 100%;
-    max-height: 100%;
 }
 
-#circle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    display: none; /* Hidden by default; displayed when a point is selected */
+.canvas {
+    background-color: black;
+    width: 50%;
 }
 
-#lines {
-    position: absolute;
-    pointer-events: none; /* This prevents the SVG from blocking interactions with the image */
+/* Add styles for the captured image */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
+
+#capturedImage {
+    max-width: 100%;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+/* Rest of your CSS styles */
+
+
