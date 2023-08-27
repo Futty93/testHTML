@@ -28,3 +28,13 @@ copyBtn.addEventListener('click', function () {
             }, 1000);
         });
 });
+
+function checkInput() {
+  var input = document.getElementById("myInput");
+
+  if (input.value == "") {
+    input.setAttribute("placeholder", "Please enter text");
+  } else {
+    input.removeAttribute("placeholder");
+  }
+}
